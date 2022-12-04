@@ -21,11 +21,56 @@
     --alternative-background-color: #F5F4FA;
     }
 
+/* Стили для обнуления верхних отступов у элементов */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+}
+
+/* Класс для обнуления базовых свойств у списков (ul) */
+.list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+/* Класс для обнуления базовых свойств у ссылок */
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Свойства для корректного отображения картинок */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Свойства для обнуления курсива у address */
+address {
+    font-style: normal;
+}
+
 body {
     background-color: var(--primary-background-color);
     color: var(--primary-text-color);
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
+}
+
+* {
+    box-sizing: border-box;
+}
+.container {
+   width: 1200px; 
+   padding-left: 15px;
+   padding-right: 15px;
 }
 /* логотип */
 
@@ -43,7 +88,7 @@ body {
 
     /* навигация */
 
-.nav-list,
+.nav.list,
 .nav-button {
     font-weight: 500;
     font-size: 14px;
@@ -51,10 +96,6 @@ body {
     letter-spacing: 0.02em;
 }
 
-
-.nav-list {
-    list-style: none;
-}
 
 .nav-link {
     color: var(--title-text-color);
@@ -80,6 +121,8 @@ body {
 
 .hero {
     background-color: var(--secondary-background-color);
+    display: inline-block;
+    text-align: center;
 }
 
 .hero-title {
@@ -87,10 +130,12 @@ body {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
+    
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    border: transparent;
+    border: transparent; 
+
+    margin-bottom: 30px;
 }
 
 .hero-button {
@@ -101,7 +146,15 @@ body {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
+    text-align: center;
     cursor: pointer;
+
+    display: inline-block;
+    border-radius: 4px;
+    border-color: transparent;
+    min-width: 200px;
+    height: 50px;
+    padding: 10px 20px;
 }
 
 
@@ -110,6 +163,10 @@ body {
     background-color: var(--alternative-accent-color);
 }
 /* Наши преимущества */
+.benefits.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 .visually-hidden {
     position: absolute;
@@ -130,18 +187,20 @@ body {
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
-.benefits-list {
-    list-style: none;
-}
 
-.benefits-discraption {
+.benefits-discription {
     font-size: 14px;
     line-height: 1.71;
 }
 
 /* Чем мы занимаемся */
+
+.discription.section {
+    padding-bottom: 94px;
+}
 
 .discription-title {
     color: var(--title-text-color);
@@ -149,17 +208,18 @@ body {
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
-}
 
-.discription-list {
-    list-style: none;
+    margin-bottom: 50px;
 }
 
 /* Наша команда */
-
+.team.section {
+    padding: 94px 0px;
+}
 .team {
     background-color: var(--alternative-background-color);
 }
+
 
 .team-title {
     color: var(--title-text-color);
@@ -169,16 +229,13 @@ body {
     text-align: center;
 }
 
-.team-list {
-    list-style: none;
-}
-
 .team-name {      
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .team-position {
@@ -191,17 +248,20 @@ body {
 
 /* Футер */
 
-.contacts {
+.contacts.section {
     background-color: var(--secondary-background-color);
+    padding: 60px 0px;
 }
 
+.contacts.section p {
+    margin-bottom: 28px;
+}
 .logo-footer {
     color: var(--alternative-text-color);
 }
 
-.contact-list {
-    list-style: none;
-    
+.contact.list a {
+    margin-bottom: 12px;
 }
 
 .contact-adress {
@@ -234,9 +294,7 @@ body {
 
 /* Фільтри */
 
-.filters {
-    list-style: none;
-}
+
 
 .filter-button {
     background-color: var(--alternative-background-color);
@@ -259,9 +317,7 @@ body {
 
 /* Проекты */
 
-.project-list {
-    list-style: none;
-}
+
 
 .projects-title {
     color:  var(--title-text-color);
