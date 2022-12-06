@@ -21,31 +21,37 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="./index.html" class="logo">Web<span class="logo-nav">Studio</span></a>
-        <ul class="nav-list">
-          <li><a href="./index.html" class="nav-link">Студія</a></li>
-          <li><a href="./portfolio.html" class="nav-link curent">Портфоліо</a></li>
-          <li><a href="#" class="nav-link">Контакти</a></li>
+    <header class="section page-header">
+      <div class="container page-header">
+        <nav class="nav-flex">
+          <a href="./index.html" class="logo">Web<span class="logo-nav">Studio</span></a>
+          <ul class="nav list">
+            <li class="item"><a href="./index.html" class="nav-link">Студія</a></li>
+            <li class="item"><a href="./portfolio.html" class="nav-link curent">Портфоліо</a></li>
+            <li class="item"><a href="#" class="nav-link">Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="nav list contact">
+          <li class="contact-item">
+            <a href="mailto:info@dewstudio.com" class="nav-button">info@dewstudio.com</a>
+          </li>
+          <li class="contact-item">
+            <a href="tel:+380961111111" class="nav-button">+38 096 111 11 11</a>
+          </li>
         </ul>
-      </nav>
-      <ul class="nav list">
-        <li><a href="mailto:info@dewstudio.com" class="nav-button">info@dewstudio.com</a></li>
-        <li><a href="tel:+380961111111" class="nav-button">+38 096 111 11 11</a></li>
-      </ul>
+      </div>
     </header>
     <main>
-      <section>
+      <section class="container portfolio">
         <h1 class="visually-hidden">Портфоліо</h1>
         <ul class="filters list">
-          <li><button type="button" class="filter-button">Усі</button></li>
-          <li><button type="button" class="filter-button">Веб-сайти</button></li>
-          <li><button type="button" class="filter-button">Додатки</button></li>
-          <li><button type="button" class="filter-button">Дизайн</button></li>
-          <li><button type="button" class="filter-button">Маркетинг</button></li>
+          <li class="item"><button type="button" class="filter-button">Усі</button></li>
+          <li class="item"><button type="button" class="filter-button">Веб-сайти</button></li>
+          <li class="item"><button type="button" class="filter-button">Додатки</button></li>
+          <li class="item"><button type="button" class="filter-button">Дизайн</button></li>
+          <li class="item"><button type="button" class="filter-button">Маркетинг</button></li>
         </ul>
-        <ul class="project list">
+        <ul class="project list project-flex">
           <li>
             <img src="./images/tehnocrack.jpg" alt="команди розробників на ноутбуці" width="370" />
             <h2 class="projects-title">Технокряк</h2>
@@ -94,23 +100,25 @@
         </ul>
       </section>
     </main>
-    <footer class="contacts">
-      <p class="logo">Web<span class="logo-footer">Studio</span></p>
-      <address>
-        <ul class="contact list">
-          <li>
-            <a
-              href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-              class="contact-adress"
-              >м. Київ, пр-т Лесі Українки, 26</a
-            >
-          </li>
-          <li><a href="mailto:info@devstudio.com" class="contact-mail">info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111" class="contact-tel">+38 096 111 11 11</a></li>
-        </ul>
-      </address>
+    <footer class="contacts section">
+     <div class="container">
+        <p class="logo">Web<span class="logo-footer">Studio</span></p>
+        <address>
+          <ul class="contact list">
+            <li>
+              <a
+                href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                class="contact-adress"
+                >м. Київ, пр-т Лесі Українки, 26</a
+              >
+            </li>
+            <li><a href="mailto:info@devstudio.com" class="contact-mail">info@devstudio.com</a></li>
+            <li><a href="tel:+380961111111" class="contact-tel">+38 096 111 11 11</a></li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
