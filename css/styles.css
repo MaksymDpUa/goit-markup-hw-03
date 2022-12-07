@@ -76,11 +76,11 @@ body {
 }
 /* логотип */
 
-.section .page-header {
-border: 1px solid #ECECEC;
+.page-header {
+border-bottom: 1px solid #ECECEC;
 }
 
-.container.page-header {
+.page-header .container{
     display: flex;
     align-items: center;
 }
